@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main  class="bg-slate-700">
+        <section class=" bg-white min-h-screen max-w-md mx-auto">
+            <header class="">
+                <nav class="flex justify-between pt-5 px-1">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/Group.png" alt="">
+                        <div class="">
+                            <p class="font-black">$<span id="balance">40000</span></p>
+                            <p>Available Balance</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="p-4 border-[#08080880] border">Log out</button>
+                    </div>
+                </nav>
+                <hr class="bg-none border-[#666768] mt-5">
+            </header>
+            <div class="px-5">
+                <h3>🔥 Welcome to Payooo!</h3>
+                <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div> 
+            
+            <div class="grid grid-cols-3 gap-9 mt-6 px-5">
+               <div id="addMoney-box" class="flex flex-col justify-center items-center border bg-gray-100 hover:bg-slate-300 border-[#0874F20D] rounder-lg py-5 gap-2">
+                <img  src="assets/wallet1.png" alt="">
+                <p>Add Money</p>
+               </div>   
+               <div id="cashout-box" class="flex flex-col justify-center items-center border bg-gray-100 hover:bg-slate-300 border-[#0874F20D] rounder-lg py-5 gap-2">
+                <img  src="assets/money1.png" alt="">
+                <p>Cashout</p>
+               </div>   
+               <div class="flex flex-col justify-center items-center border bg-gray-100 hover:bg-slate-300 border-[#0874F20D] rounder-lg py-5 gap-2">
+                <img  src="assets/send1.png" alt="">
+                <p>Transfer Money</p>
+               </div>   
+               <div class="flex flex-col justify-center items-center border bg-gray-100 hover:bg-slate-300 border-[#0874F20D] rounder-lg py-5 gap-2">
+                <img  src="assets/bonus1.png" alt="">
+                <p>Get Bonus</p>
+               </div>   
+               <div class="flex flex-col justify-center items-center border bg-gray-100 hover:bg-slate-300 border-[#0874F20D] rounder-lg py-5 gap-2">
+                <img  src="assets/purse1.png" alt="">
+                <p>Pay Bill</p>
+               </div>   
+               <div class="flex flex-col justify-center items-center border bg-gray-100 hover:bg-slate-300 border-[#0874F20D] rounder-lg py-5 gap-2">
+                <img  src="assets/transaction1.png" alt="">
+                <p>Transactions</p>
+               </div>   
+            </div>
+            <!-- form-add-money -->
+            <div id="add-money">
+                <p class="font-black ml-8 my-5">Add Money</p>
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                   
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        
+                        <form class="card-body mt-2">
+                            <select class="select">
+                                <option disabled selected>Select A Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nogod">Nogod</option>
+                                <option value="Roket">Roket</option>
+                              </select>
+                            <fieldset class="fieldset">
+                                <label  class="fieldset-label font-bold">Account Number</label>
+                                <input value="" id="account-number" type="number" class="input" placeholder="Enter your number" required/>
+                                <label class="fieldset-label font-bold">Amount to Add</label>
+                                <input id="amount" type="number" class="input" placeholder="Add Amount to withdraw" required/>
+                                <label class="fieldset-label font-bold">PIN</label>
+                                <input id="pin" type="number" class="input" placeholder="Enter 4 Digit Pin" required/>
+                                
+                                <button id="add-money" class="btn btn-neutral mt-4">Add Money</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- form-cashout -->
+            <div id="cashout">
+                <p class="font-black ml-8 my-5">Cash Out</p>
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                   
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        
+                        <form class="card-body mt-2">
+                            <select class="select">
+                                <option disabled selected>Select A Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nogod">Nogod</option>
+                                <option value="Roket">Roket</option>
+                              </select>
+                            <fieldset class="fieldset">
+                                <label  class="fieldset-label font-bold">Account Number</label>
+                                <input value="" id="account-number" type="number" class="input" placeholder="Enter your number" required/>
+                                <label class="fieldset-label font-bold">Amount to Add</label>
+                                <input id="cash-out-amount" type="number" class="input" placeholder="Add Amount to withdraw" required/>
+                                <label class="fieldset-label font-bold">PIN</label>
+                                <input id="cash-out-pin" type="number" class="input" placeholder="Enter 4 Digit Pin" required/>
+                                
+                                <button id="cash-out-btn" class="btn btn-neutral mt-4">Cash Out</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+    <script src="script/addMoney.js"></script>
+    <script src="script/loggle.js"></script>
+</body>
+</html>

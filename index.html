@@ -11,7 +11,10 @@
 
 <body class="">
     <main class="bg-slate-700">
+        
         <section class="bg-white min-h-screen max-w-md mx-auto">
+            accont - 09988556644 <br>
+        pin - 1234
             <header>
                 <nav class="flex justify-center items-center flex-col pt-14">
                     <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
@@ -24,21 +27,23 @@
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <div class="card-body">
+                        <form class="card-body">
                             <fieldset class="fieldset">
                                 <label  class="fieldset-label font-bold">Account Number</label>
-                                <input type="email" class="input" placeholder="Enter your number" />
+                                <input value="" id="account-number" type="number" class="input" placeholder="Enter your number" required/>
                                 <label class="fieldset-label font-bold">PIN</label>
-                                <input type="text" class="input" placeholder="Enter 4 Digit Pin" />
+                                <input id="pin" type="number" class="input" placeholder="Enter 4 Digit Pin" required/>
                                 <div><a class="link link-hover">Forgot password?</a></div>
-                                <button class="btn btn-neutral mt-4">Login</button>
+                                <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
                             </fieldset>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="script/login.js"></script>
 </body>
 
 </html>
